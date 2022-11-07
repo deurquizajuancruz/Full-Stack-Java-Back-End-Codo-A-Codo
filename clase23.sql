@@ -19,7 +19,7 @@ DESCRIBE libro;
 ALTER TABLE libro ADD CONSTRAINT UN_libro_articulo_id UNIQUE (articulo_id)
 
 
-/*agregar una constraint (restriccion) al cmapo paginas para que sea > 0*/
+/*agregar una constraint (restriccion) al campo paginas para que sea > 0*/
 ALTER TABLE libro ADD CONSTRAINT CHECK(nro_paginas > 0);
 
 /*eliminar una tabla, primero creamos una tabla*/

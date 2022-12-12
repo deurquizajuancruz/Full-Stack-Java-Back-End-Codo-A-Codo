@@ -63,10 +63,10 @@ public class Articulo {
 	}
 
 	public void detalle() {
+		System.out.println("ID: " + this.id);
 		System.out.println("Titulo: " + this.titulo);
 		System.out.println("Autor: " + this.autor);
 		System.out.println("Imagen: " + this.img);
 		System.out.println("Precio: " + this.precio);
-		System.out.println("ID: " + this.id);
 	}
 }

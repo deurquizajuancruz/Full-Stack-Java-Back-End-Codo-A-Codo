@@ -21,14 +21,17 @@ public class FindAllArticulosController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		IArticuloDAO dao = new ArticuloDAOMysqlImpl();
 
+		List<Articulo> articulosBuscados = new ArrayList<>();
 		try {
-			List<Articulo> articulosBuscado = dao.findAll();
-
-			articulosBuscado.stream().forEach(x -> x.detalle());
-
+			articulosBuscados = dao.findAll();
+			articulosBuscados.stream().forEach(x -> x.detalle());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		req.setAttribute("listado", articulosBuscados);
+		
+		getServletContext().getRequestDispatcher("/listado.html").forward(req, resp);
 	}
 
 	public static void main(String[] args) throws Exception {

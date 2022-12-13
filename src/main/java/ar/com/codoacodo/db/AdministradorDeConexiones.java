@@ -15,7 +15,6 @@ public class AdministradorDeConexiones {
 		String url = "jdbc:mysql://"+host+":"+port+"/"+dbName+"?serverTimeZone=UTC&useSSL=false";
 		String driverClassName = "com.mysql.cj.jdbc.Driver";
 		Class.forName(driverClassName);
-		
 		Connection connection = DriverManager.getConnection(url, username, password);
 		return connection;
 	}

@@ -4,9 +4,9 @@ public class Articulo {
 	private String img;
 	private String titulo;
 	private String autor;
-	private float precio; 
+	private float precio;
 	private Long id;
-	
+
 	public Articulo(String img, String titulo, String autor, float precio, Long id) {
 		this.img = img;
 		this.titulo = titulo;
@@ -21,9 +21,12 @@ public class Articulo {
 		this.autor = autor;
 		this.precio = precio;
 	}
-	
+
 	public String getImg() {
-		return img;
+		if (this.img != null) {
+			return this.img;
+		}
+		return "";
 	}
 
 	public void setImg(String img) {

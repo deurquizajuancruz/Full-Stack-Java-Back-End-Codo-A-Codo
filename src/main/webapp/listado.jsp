@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE HTML>
 <%@page import="ar.com.codoacodo.domain.Articulo"%>
 <%@page import="java.util.List"%>
@@ -55,4 +56,14 @@
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
 </body>
+=======
+<html>
+	<head>
+	
+	</head>
+	
+	<body>
+		<h1> Pagina de listado</h1>
+	</body>
+>>>>>>> 2352103c12b63b2417f1abfc0f3753409d706c3d
 </html>
